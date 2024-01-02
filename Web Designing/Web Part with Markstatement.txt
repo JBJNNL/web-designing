@@ -1,0 +1,76 @@
+----------------------------------------------Web Page--------------------------------------------------------
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+
+public partial class WebUserControl : System.Web.UI.UserControl
+{
+    int h, en, m, p, b,t,avg;
+    protected void Page_Load(object sender, EventArgs e)
+    {
+
+    }
+   
+    protected void Button2_Click(object sender, EventArgs e)//Total
+    {
+        
+        h =Convert.ToInt32(TextBox4.Text);
+        en = Convert.ToInt32(TextBox5.Text);
+        m = Convert.ToInt32(TextBox6.Text);
+        p = Convert.ToInt32(TextBox7.Text);
+        b = Convert.ToInt32(TextBox8.Text);
+        t = h + en + m + p + b;
+        TextBox9.Text = t.ToString();
+
+    }
+    protected void Button3_Click(object sender, EventArgs e)//Average
+    {
+
+        h = Convert.ToInt32(TextBox4.Text);
+        en = Convert.ToInt32(TextBox5.Text);
+        m = Convert.ToInt32(TextBox6.Text);
+        p = Convert.ToInt32(TextBox7.Text);
+        b = Convert.ToInt32(TextBox8.Text);
+        t = h + en + m + p + b;
+        avg = t / 5;
+        TextBox10.Text = avg.ToString()+"%";
+    }
+    protected void Button1_Click(object sender, EventArgs e)//Sumit
+    {
+        Session["name"] = TextBox1.Text;
+        Session["roll"] = TextBox2.Text;
+        Session["total"] = TextBox9.Text;
+        Session["avg"] = TextBox10.Text;
+        Response.Redirect("Result.aspx");
+    }
+}
+
+
+---------------------------------Result page-------------
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+
+public partial class Result : System.Web.UI.Page
+{
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        String name=Session["name"].ToString();
+        String roll = Session["roll"].ToString();
+        String total = Session["total"].ToString();
+        String avg = Session["avg"].ToString();
+        Literal1.Text = "Mr " + name + " Your Data Submitted Successfully";
+        TextBox1.Text = name;
+        TextBox2.Text = roll;
+        TextBox3.Text = total;
+        TextBox4.Text = avg;
+
+    }
+}

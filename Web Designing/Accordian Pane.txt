@@ -1,0 +1,79 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+        }
+        .style2
+        {
+            width: 286px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        
+        <table class="style1">
+            <tr>
+                <td class="style2">
+                    <div style="height: 503px">
+                    
+                        <asp:Accordion ID="Accordion1" runat="server" Height="779px">
+                        <Panes>
+                        <asp:AccordionPane ID="ac1" runat="server">
+                        <Header>Calender</Header>
+                        <Content>
+                        <asp:Calendar ID="cal" runat="server"></asp:Calendar>
+                        </Content>
+                        
+                        </asp:AccordionPane>
+                         <asp:AccordionPane ID="AccordionPane1" runat="server">
+                        <Header>Login</Header>
+                        <Content>
+                            <asp:Login ID="Login1" runat="server">
+                            </asp:Login>
+                        </Content>
+                        
+                        </asp:AccordionPane>
+                         <asp:AccordionPane ID="AccordionPane2" runat="server">
+                        <Header>Signul</Header>
+                        <Content>
+                            <asp:CreateUserWizard ID="CreateUserWizard1" runat="server">
+                                <WizardSteps>
+                                    <asp:CreateUserWizardStep ID="CreateUserWizardStep1" runat="server">
+                                    </asp:CreateUserWizardStep>
+                                    <asp:CompleteWizardStep ID="CompleteWizardStep1" runat="server">
+                                    </asp:CompleteWizardStep>
+                                </WizardSteps>
+                            </asp:CreateUserWizard>
+                        </Content>
+                        
+                        </asp:AccordionPane>
+                        </Panes>
+                        </asp:Accordion>
+                        <asp:ToolkitScriptManager ID="ToolkitScriptManager1" runat="server">
+                        </asp:ToolkitScriptManager>
+                    </div>
+                </td>
+                <td>
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+        </table>
+        
+    </div>
+    </form>
+</body>
+</html>

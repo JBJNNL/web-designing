@@ -1,0 +1,80 @@
+Querry String:-
+
+Home Page:-
+
+Texbox & Button
+------------------------------Button Click -------------------
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+
+public partial class Home : System.Web.UI.Page
+{
+    protected void Page_Load(object sender, EventArgs e)
+    {
+
+    }
+    protected void Button1_Click(object sender, EventArgs e)
+    {
+
+       
+        Server.Transfer("Default.aspx?pass=" + TextBox1.Text);
+    }
+}
+
+----------------------------Default Page New------------------
+Page Load 
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+
+public partial class _Default : System.Web.UI.Page
+{
+    protected void Page_Load(object sender, EventArgs e)
+    {
+       Literal1.Text=Request.QueryString["pass"].ToString();
+
+    }
+}
+
+----------------------------------------------------------------------------------
+Cookies:-
+
+Default 2 Design
+
+Textbox 1 & Button name:-Add Cookies
+Textbox 2 & Button-->Get Cookies
+
+------------------------------Button 1 & 2 Click------------
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+
+public partial class Default2 : System.Web.UI.Page
+{
+    protected void Page_Load(object sender, EventArgs e)
+    {
+
+    }
+    protected void Button1_Click(object sender, EventArgs e)
+    {
+        Response.Cookies["JBJ"].Value = TextBox1.Text;
+        Response.Write("Cookies Added Successfully");
+    }
+    protected void Button2_Click(object sender, EventArgs e)
+    {
+       String jbj=Request.Cookies["JBJ"].Value;
+       TextBox2.Text = jbj;
+    }
+}
+

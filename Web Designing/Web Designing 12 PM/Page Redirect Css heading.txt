@@ -1,0 +1,53 @@
+<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Default.aspx.cs" Inherits="_Default" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <style type="text/css">
+        a:hover
+        {
+            background-color:yellow;
+            color:Red;
+            
+            }
+            a:visited
+            {
+                color:Green;
+                
+                }
+            h1:hover
+            {
+                background-color:Fuchsia;
+            color:Lime;
+                }
+    
+   
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+    <marquee>
+    <font size="13" color="blue">Welcome to Home Page</font>
+    </marquee>
+    <a href="Default.aspx">Home</a> &nbsp;&nbsp;&nbsp;
+    <a href="about.aspx">About Us</a>&nbsp;&nbsp;&nbsp;
+    <a href="Contact.aspx">Contact US</a>&nbsp;&nbsp;&nbsp;
+    <a href="Gallery.aspx">Gallery</a>
+    <br />
+
+    <h1>JBJ INSTITUTE</h1>
+    <h2>JBJ INSTITUTE</h2>
+    <h3>JBJ INSTITUTE</h3>
+    <h4>JBJ INSTITUTE</h4>
+    <h5>JBJ INSTITUTE</h5>
+    <h6>JBJ INSTITUTE</h6>
+
+    Wecome to <strong><u><font color="red">JBJ</font></u></strong> Istitute Narnaul
+    
+    
+    
+</body>
+</html>

@@ -1,0 +1,30 @@
+
+create database jbjnew
+
+use jbjnew
+
+
+--------------------------------------------------
+create table registration
+(
+regno int,
+name varchar(20),
+address1 varchar(20),
+contact varchar(20),
+email varchar(20),
+course varchar(20),
+fees int,
+gender varchar(30)
+
+)
+
+select * from registration
+
+insert into registration values(103,'Neeraj','NNL','9898787676','neeraj@gmail.com','ASP',4000,'Male')
+
+------------------------------------------------------------------------
+delete from registration where regno=102
+
+-------------------------------------------
+update registration set name='Deepak',address1='GGN',contact='8990909873',email='deepak@gmail.com',course='.NET',fees=5000 where regno=103
+-----------------------------------------------------------------------------------------------

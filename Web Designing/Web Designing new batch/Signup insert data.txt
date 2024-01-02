@@ -1,0 +1,11 @@
+ protected void Button2_Click(object sender, EventArgs e)
+    {
+        SqlConnection con = new SqlConnection("Data Source=(local);Initial Catalog=jbj;Integrated Security=True");
+        SqlCommand cmd = new SqlCommand("insert into login1(userid,password) values (@user,@pass)", con);
+        cmd.Parameters.AddWithValue("@user", TextBox3.Text);
+        cmd.Parameters.AddWithValue("@pass", TextBox4.Text);
+        con.Open();
+        int c = cmd.ExecuteNonQuery();
+        con.Close();
+        Response.Write("Signup Successfully");
+    }

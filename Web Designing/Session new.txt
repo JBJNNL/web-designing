@@ -1,0 +1,50 @@
+-----------------------------------------------Login Button Code-------------------
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+
+public partial class _Default : System.Web.UI.Page
+{
+    protected void Page_Load(object sender, EventArgs e)
+    {
+
+    }
+    protected void Button1_Click(object sender, EventArgs e)
+    {
+        String user;
+        user = TextBox1.Text;
+        if (user == "Manoj")
+        {
+            Session["user"] = TextBox1.Text;
+            Server.Transfer("Default2.aspx");
+        }
+        else
+            Literal1.Text = "Wrong user id & Password";
+    }
+}
+
+
+
+-----------------------------------------Default2 page code------------------
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+
+public partial class Default2 : System.Web.UI.Page
+{
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        Literal1.Text ="Welcome "+Session["user"].ToString();
+    }
+    protected void Button1_Click(object sender, EventArgs e)
+    {
+        Session.Abandon();
+        Server.Transfer("Default.aspx");
+    }
+}

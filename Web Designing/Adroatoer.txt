@@ -1,0 +1,50 @@
+ Default Page
+
+<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Default.aspx.cs" Inherits="_Default" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <meta http-equiv="Refresh" content="2" />
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div style="z-index: 1; left: 894px; top: 15px; position: absolute; height: 478px; width: 305px">
+    
+        <asp:AdRotator ID="AdRotator1" AdvertisementFile="~/advertisement.xml" runat="server" Height="478px" Width="305px" />
+    
+    </div>
+    </form>
+</body>
+</html>
+
+
+
+----------------------------------------Avertisement File--------------------------------
+<?xml version="1.0" encoding="utf-8" ?>
+<Advertisements>
+  <Ad>
+    <ImageUrl>http://localhost:50856/WebSite55/Img/1.jpeg</ImageUrl>
+    <NavigateUrl>https://gst.gov.in/</NavigateUrl>
+    <Impression>5000</Impression>
+  </Ad>
+  <Ad>
+    <ImageUrl>http://localhost:50856/WebSite55/Img/2.jpeg</ImageUrl>
+    <NavigateUrl>https://www.javatpoint.com/</NavigateUrl>
+    <Impression>5000</Impression>
+  </Ad>
+
+  <Ad>
+    <ImageUrl>http://localhost:50856/WebSite55/Img/3.jpeg</ImageUrl>
+    <NavigateUrl>https://smarto.one/center/index</NavigateUrl>
+    <Impression>5000</Impression>
+  </Ad>
+  <Ad>
+    <ImageUrl>http://localhost:50856/WebSite55/Img/4.jpeg</ImageUrl>
+    <NavigateUrl>https://www.facebook.com/</NavigateUrl>
+    <Impression>5000</Impression>
+  </Ad>
+
+</Advertisements>

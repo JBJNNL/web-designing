@@ -1,0 +1,55 @@
+body 
+{
+    background-color:Aqua;
+}
+.h1
+{
+    background-color:Red;
+    border-style:double;
+    color:Blue;
+    
+    }
+
+.h2
+{
+    background-color:Blue;
+    border-style:double;
+    color:White;
+    
+    }
+    .h3
+{
+    background-color:Green;
+    border-style:double;
+    color:Blue;
+    
+    }
+    .h4
+{
+    background-color:Fuchsia;
+    border-style:double;
+    color:Navy;
+    
+    }
+    .h5
+{
+    background-color:Maroon;
+    border-style:double;
+    color:Blue;
+    
+    }
+    .h6
+{
+    background-color:Teal;
+    border-style:double;
+    color:Blue;
+    
+    }
+    
+   p
+   {
+       background-color:Yellow;
+       border-style:outset;
+       color:Blue;
+       
+       } 

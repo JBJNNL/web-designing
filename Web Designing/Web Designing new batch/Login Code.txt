@@ -1,0 +1,39 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using System.Data.SqlClient;
+using System.Data;
+public partial class _Default : System.Web.UI.Page
+{
+    protected void Page_Load(object sender, EventArgs e)
+    {
+
+    }
+    protected void Button1_Click(object sender, EventArgs e)
+    {
+        SqlConnection con = new SqlConnection("Data Source=(local);Initial Catalog=NEW;Integrated Security=True");
+        SqlCommand cmd = new SqlCommand("select * from login where Userid=@user and Password=@pass", con);
+        cmd.Parameters.AddWithValue("@user", TextBox1.Text);
+        cmd.Parameters.AddWithValue("@pass", TextBox2.Text);
+
+
+        SqlDataAdapter da = new SqlDataAdapter(cmd);
+        DataTable dt = new DataTable();
+        con.Open();
+        da.Fill(dt);
+        int a = cmd.ExecuteNonQuery();
+        if (dt.Rows.Count > 0)
+        {
+            Response.Redirect("Default2.aspx");
+        }
+        else
+        {
+
+            Literal1.Text = "User id & Password Incorrect";
+        }
+        con.Close();
+    }
+}

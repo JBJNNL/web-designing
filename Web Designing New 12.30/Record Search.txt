@@ -1,0 +1,39 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using System.Data.SqlClient;
+using System.Data;
+
+public partial class _Default : System.Web.UI.Page
+{
+    protected void Page_Load(object sender, EventArgs e)
+    {
+
+    }
+    protected void Button1_Click(object sender, EventArgs e)
+    {
+        try
+        {
+            SqlConnection con = new SqlConnection("Data Source=(local);Initial Catalog=NEW;Integrated Security=True");
+            SqlCommand cmd = new SqlCommand("select * from result where Rollno=@roll", con);
+            cmd.Parameters.AddWithValue("@roll", TextBox1.Text);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            con.Open();
+            da.Fill(dt);
+            int a = cmd.ExecuteNonQuery();
+            //GridView1.DataSource = dt;
+            //GridView1.DataBind();
+            DetailsView1.DataSource = dt;
+            DetailsView1.DataBind();
+            con.Close();
+        }
+        catch (Exception ex)
+        {
+            Response.Write(ex);
+        }
+    }
+}

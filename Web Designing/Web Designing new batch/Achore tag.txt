@@ -1,0 +1,53 @@
+<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Default.aspx.cs" Inherits="_Default" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <style>
+    
+    a:hover
+    {
+        
+        background-color:Red;
+        color:White;
+        border-style:dotted;
+        border-color:Black;
+       font-size:large;
+       font-family:Jokerman;
+        
+        }
+        a:visited
+        {
+              background-color:Blue;
+        color:Red;
+        border-style:dotted;
+        border-color:Green;
+       font-size:x-large;
+       font-family:Jokerman;
+        
+            
+            }
+            
+            body
+            {
+                
+                background-image:url("2.jpg");
+                
+                }
+    
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+    <a href="https://www.facebook.com/" target="_blank">Facebook</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="https://gst.gov.in/" target="_blank">GST SITE</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="https://jbjsmartlearning.blogspot.com/" target="_blank">JBJ COMPUTER CENTER</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="https://www.sarkariresult.com/" target="_blank">SARKARI FORM</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="https://web.whatsapp.com/" target="_blank">Whatsapp</a>
+    </div>
+    </form>
+</body>
+</html>

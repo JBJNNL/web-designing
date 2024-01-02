@@ -1,0 +1,45 @@
+<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Default.aspx.cs" Inherits="_Default" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+    Course List
+    <ul>
+    <li>ASP.NET</li>
+    <li>PHP</li>
+    <li>WEB DESIGING</li>
+    <li>SQL SERVER</li>
+    <li>GST</li>
+    </ul>
+    <hr />
+    Our Services
+    <ol type="1">
+  <li>GST</li>
+  <li>Degree Course</li>
+  <li>12th or 10th </li>
+  <li>ITI</li>
+  <li>Polytechnical</li>  
+  </ol>
+  <hr />
+
+  <dt>HTML</dt>
+  <dd>HTML is used for Web Designing </dd>
+  <dt>C#</dt>
+  <dd>C# is a Software Development Language </dd>
+
+  <hr />
+
+  Furmula:- A<sup>2</sup>+B<sup>2</sup><br />
+  Water Furmula H<sub>2</sub>
+  <hr />
+  Enter Name <input type="text" name="name" placeholder="Enter Name Here" />
+    </div>
+    </form>
+</body>
+</html>

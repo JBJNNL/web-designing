@@ -1,0 +1,23 @@
+<marquee bgcolor="black" scrollamount="13px" behavior="alternate">
+    <font color="red" size="10px">
+    WELCOME TO JBJ TRAINING INSTITUTE
+    </font>
+    </marquee>
+    <marquee onmouseover="this.stop()" onmouseout="this.start()" scrollamount="13px" behavior="alternate">
+    <font color="blue" size="6">
+    Rajasthan Police Form 2021||Delhi Police Result||<a target="_blank" href="https://www.sarkariresult.com/2021/rvunl-various-post-march21.php"> Bijali Vancancy</a><br />
+ 
+    </font>
+    </marquee>
+     <marquee onmouseover="this.stop()" onmouseout="this.start()" scrollamount="" behavior="alternate">
+    <font color="blue" size="6">
+    Rajasthan Police Form 2021||Delhi Police Result||Rajasthan Bijali Vancancy<br />
+ 
+    </font>
+    </marquee>
+     <marquee onmouseover="this.stop()" onmouseout="this.start()" scrollamount="9px" behavior="alternate">
+    <font color="blue" size="6">
+    Rajasthan Police Form 2021||Delhi Police Result||Rajasthan Bijali Vancancy<br />
+ 
+    </font>
+    </marquee>

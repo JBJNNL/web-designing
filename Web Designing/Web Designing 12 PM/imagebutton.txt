@@ -1,0 +1,60 @@
+<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Default.aspx.cs" Inherits="_Default" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+        }
+        .style2
+        {}
+        .style3
+        {
+            width: 662px;
+        }
+    </style>
+</head>
+<body bgcolor="red">
+    <form id="form1" runat="server">
+    <div>
+   <marquee bgcolor="black" behavior="alternate" scrollamount="20pt" onmouseover="this.stop()" onmouseout="this.start()">
+<font size="16pt" color="white">JBJ COMPUTER CENTER NARNAUL</font>
+</marquee>
+<hr  color="blue"/> 
+    </div>
+    <table class="style1">
+        <tr>
+            <td class="style3">
+                &nbsp;</td>
+            <td class="style2">
+            
+                <asp:ImageButton ID="ImageButton1" runat="server" Height="48px" Width="117px" 
+                    ImageUrl="~/img/fb-logo.jpg" PostBackUrl="https://www.facebook.com/" />&nbsp;&nbsp;&nbsp;
+                <asp:ImageButton ID="ImageButton2" runat="server" Height="48px" Width="117px" 
+                    ImageUrl="~/img/Google.png" PostBackUrl="https://www.google.com/" />&nbsp;&nbsp;&nbsp;
+                <asp:ImageButton ID="ImageButton3" runat="server" Height="48px" Width="117px" 
+                    ImageUrl="~/img/insta.jpg" PostBackUrl="https://www.instagram.com/" />&nbsp;&nbsp;&nbsp;
+                <asp:ImageButton ID="ImageButton4" runat="server" Height="48px" Width="117px" 
+                    ImageUrl="~/img/twitter.png" PostBackUrl="https://twitter.com/?lang=en" />
+            </td>
+        </tr>
+    </table>
+    <asp:ImageButton ID="ImageButton5" runat="server" Height="36px" 
+        ImageUrl="~/img/fb-logo.jpg" ToolTip="Click to Visit Facebook Site" 
+        Width="38px" />
+&nbsp;&nbsp;
+    <asp:ImageButton ID="ImageButton6" runat="server" Height="36px" 
+        ImageUrl="~/img/Google.png" Width="38px" />
+&nbsp;
+    <asp:ImageButton ID="ImageButton7" runat="server" Height="36px" 
+        ImageUrl="~/img/insta.jpg" Width="38px" />
+&nbsp;&nbsp;
+    <asp:ImageButton ID="ImageButton8" runat="server" Height="36px" 
+        ImageUrl="~/img/twitter.png" Width="38px" />
+    </form>
+</body>
+</html>

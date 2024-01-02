@@ -1,0 +1,63 @@
+<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Default.aspx.cs" Inherits="_Default" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <style type="text/css">
+        .style3
+        {
+            width: 100%;
+        }
+        .style4
+        {
+            width: 616px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div style="height: 142px; background-color:Maroon;">
+    
+        <div style="height: 100px">
+            <img alt="" src="Front%20Banner.png" style="height: 100px; width: 1189px" /></div>
+    <marquee behavior="alternate" scrollamount="10">
+    <font size="6" color="white">Welcome to JBJ Institute Narnaul</font>
+    </marquee>
+    </div>
+
+    </form>
+  
+    
+    <table class="style3">
+        <tr>
+            <td>
+                &nbsp;</td>
+            <td class="style4">
+                &nbsp;</td>
+            <td>
+            <div>
+             &nbsp;<marquee direction="up" bgcolor="Maroon" 
+                        style="height: 596px; margin-left: 357px; width: 200px;">
+               <font color="white" size="4">
+               News and Events<br />
+<img src="new.gif" />
+ Open For Session 2018-2019.<br /><br />
+ <img src="new.gif" />
+
+Contact For Any Industrial Training.<br /><br />
+<img src="new.gif" />
+
+Contact For Any Industrial Collaboration.<br /><br />
+<img src="new.gif" />
+
+Application & Proposals also invited for Franchise.<br /><br />
+</font></marquee></div>
+                &nbsp;</td>
+        </tr>
+    </table>
+  
+    
+</body>
+</html>

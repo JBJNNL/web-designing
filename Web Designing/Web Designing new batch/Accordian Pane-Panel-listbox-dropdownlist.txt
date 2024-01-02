@@ -1,0 +1,141 @@
+Master Page--------------------
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+        }
+        .style2
+        {
+            width: 290px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+     
+        <table class="style1">
+            <tr>
+                <td class="style2">
+                    <div style="height: 518px">
+                        <asp:Accordion ID="Accordion1" runat="server" Height="1134px">
+                        <Panes>
+                        <asp:AccordionPane ID="Ac1" runat="server">
+                        <Header>Calender</Header>
+                        <Content>
+                            <asp:Calendar ID="Calendar1" runat="server"></asp:Calendar>
+                        </Content>
+                        </asp:AccordionPane>
+
+                        <asp:AccordionPane ID="AccordionPane1" runat="server">
+                        <Header>Login</Header>
+                        <Content>
+                            <asp:Login ID="Login1" runat="server">
+                            </asp:Login>
+                        </Content>
+                        </asp:AccordionPane>
+                        <asp:AccordionPane ID="AccordionPane2" runat="server">
+                        <Header>Sign Up</Header>
+                        <Content>
+                            <asp:CreateUserWizard ID="CreateUserWizard1" runat="server">
+                                <WizardSteps>
+                                    <asp:CreateUserWizardStep ID="CreateUserWizardStep1" runat="server">
+                                    </asp:CreateUserWizardStep>
+                                    <asp:CompleteWizardStep ID="CompleteWizardStep1" runat="server">
+                                    </asp:CompleteWizardStep>
+                                </WizardSteps>
+                            </asp:CreateUserWizard>
+                        </Content>
+                        </asp:AccordionPane>
+                        <asp:AccordionPane ID="AccordionPane3" runat="server">
+                        <Header>Forget Password</Header>
+                        <Content>
+                            <asp:ChangePassword ID="ChangePassword1" runat="server">
+                            </asp:ChangePassword>
+                        </Content>
+                        </asp:AccordionPane>
+                        <asp:AccordionPane ID="AccordionPane4" runat="server">
+                        <Header>Password Recovery</Header>
+                        <Content>
+                            <asp:PasswordRecovery ID="PasswordRecovery1" runat="server">
+                            </asp:PasswordRecovery>
+                        </Content>
+                        </asp:AccordionPane>
+                        </Panes>
+                        </asp:Accordion>
+                        <asp:ToolkitScriptManager ID="ToolkitScriptManager1" runat="server">
+                        </asp:ToolkitScriptManager>
+                    </div>
+                </td>
+                <td>
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+        </table>
+     
+    </div>
+    </form>
+</body>
+</html>
+
+------------------------------Default -
+<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="Default.aspx.cs" Inherits="_Default" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+    <style type="text/css">
+        .style3
+        {
+            font-family: Arial;
+        }
+        .style4
+        {
+            font-family: Arial;
+            font-size: large;
+        }
+    </style>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+    <h3>
+        <strong><span class="style3">Select Course Name&nbsp;&nbsp;&nbsp;
+        <asp:DropDownList ID="DropDownList1" runat="server">
+            <asp:ListItem Selected="True">ASP.NET</asp:ListItem>
+            <asp:ListItem>JAVA</asp:ListItem>
+            <asp:ListItem>WEB DESIGNING</asp:ListItem>
+            <asp:ListItem>PHP</asp:ListItem>
+            <asp:ListItem>TALLY PRIME</asp:ListItem>
+        </asp:DropDownList>
+        </span></strong>
+    </h3>
+    <p class="style4">
+        <strong>Select City</strong></p>
+    <p>
+        <asp:ListBox ID="ListBox1" runat="server">
+            <asp:ListItem>Jaipur</asp:ListItem>
+            <asp:ListItem>Delhi</asp:ListItem>
+            <asp:ListItem>Gurugram</asp:ListItem>
+            <asp:ListItem>Alwar</asp:ListItem>
+            <asp:ListItem>Udaipur</asp:ListItem>
+        </asp:ListBox>
+    </p>
+    <asp:Panel ID="Panel1" runat="server" BackColor="#66FFFF" BorderColor="#FF0066" 
+        BorderStyle="Groove" BorderWidth="20px" Height="82px" Width="777px">
+        <asp:Image ID="Image1" runat="server" Height="78px" Width="117px" ImageUrl="~/WhatsApp Image 2021-03-12 at 11.03.23 AM.jpeg" />
+    </asp:Panel>
+    <p>
+        &nbsp;</p>
+    <p>
+        &nbsp;</p>
+</asp:Content>
+

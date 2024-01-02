@@ -1,0 +1,79 @@
+<%@ Page Language="C#" AutoEventWireup="true" CodeFile="AdmissionForm.aspx.cs" Inherits="AdmissionForm" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+</head>
+<body bgcolor="black">
+    <form id="form1" runat="server">
+    <div>
+    <table bgcolor="red" border="2">
+    <tr>
+    <td>Name</td>
+    <td>
+    <input type="text" name="sname" />
+    </td>
+    </tr>
+    <tr>
+    <td>Address</td>
+    <td>
+    <input type="text" name="sadd" />
+    </td>
+    </tr>
+    <tr>
+    <td>Qualification</td>
+    <td>
+    <input type="text" name="qua" />
+    </td>
+    </tr>
+    <tr>
+    <td>DOB</td>
+    <td>
+    <input type="text" name="dob" />
+    </td>
+    </tr>
+    <tr>
+    <td>Course</td>
+    <td>
+    <select>
+    <option>Web Designing</option>
+    <option>JAVA</option>
+    <option>Android Apps</option>
+    <option>Tally Accounting</option>
+    <option>MS OFFICE</option>
+    </select>
+    </td>
+    </tr>
+     <tr>
+    <td>Contact</td>
+    <td>
+    <input type="text" name="contact" />
+    </td>
+    </tr>
+     <tr>
+    <td>Email Id</td>
+    <td>
+    <input type="text" name="email" />
+    </td>
+    </tr>
+     <tr>
+    <td>Gender</td>
+    <td>
+    <input type="radio" value="Male" name="M" />Male
+    <input type="radio" value="Female" name="F" />Female
+    </td>
+    </tr>
+    <tr>
+    <td></td>
+    <td>
+    <input type="submit" value="Submit" name="Sub" />
+    </td>
+    </tr>
+    </table>
+    
+    </div>
+    </form>
+</body>
+</html>

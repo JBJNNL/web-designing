@@ -1,0 +1,46 @@
+Cookies---------------------------------------------------
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+
+public partial class _Default : System.Web.UI.Page
+{
+    protected void Page_Load(object sender, EventArgs e)
+    {
+
+    }
+    protected void Button1_Click(object sender, EventArgs e)
+    {
+        
+        Response.Cookies["user"].Value = TextBox1.Text;
+        Response.Cookies["pass"].Value = TextBox2.Text;
+
+        Response.Redirect("Default2.aspx");
+    }
+  
+}
+
+
+---------------------------------------------Default 2
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+
+public partial class Default2 : System.Web.UI.Page
+{
+    protected void Page_Load(object sender, EventArgs e)
+    {
+      TextBox1.Text =Request.Cookies["user"].ToString();
+       TextBox2.Text= Request.Cookies["pass"].ToString();
+    }
+}
+
+
+-------------------------------------

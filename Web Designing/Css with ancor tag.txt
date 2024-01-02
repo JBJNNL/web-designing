@@ -1,0 +1,48 @@
+<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Default.aspx.cs" Inherits="_Default" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <style type="text/css">
+    a:hover
+    {
+        background-color:Yellow;
+        border-style:groove;
+        border-color:Silver;
+        
+        
+        
+        }
+        a:visited
+        {
+            color:Blue;
+            }
+            
+            h3
+            {
+               background-color:Yellow;
+               border-style:outset;
+               border-color:Black;
+                
+            }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div style="z-index: 1; left: 10px; top: 15px; position: absolute; height: 435px; width: 249px">
+    <marquee direction="up" style="height: 430px" bgcolor="red" onmouseover="this.stop()" onmouseout="this.start()">
+    <font size="6">
+    <a href="https://www.hguniversity.com/" target="_blank">New Courses</a><br /><br /><br />
+    <a href="https://hgu.ac.in/" target="_blank">Our Service...</a><br /><br /><br />
+    <a href="https://www.facebook.com/" target="_blank">Our Partners...</a><br /><br /><br />
+    <a href="https://jbjsmartlearning.blogspot.com/" target="_blank">New Clients...</a>
+    <h3>Success Story</h3>
+    </font>
+    </marquee>
+    
+    </div>
+    </form>
+</body>
+</html>

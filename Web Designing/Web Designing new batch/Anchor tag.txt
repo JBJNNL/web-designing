@@ -1,0 +1,35 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <style type="text/css">
+    a:hover
+    {
+        background-color:Red;
+        border-style:groove;
+        border-color:Blue;
+        color:Yellow;
+        font-size:larger;
+        font-family:Jokerman;
+        
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+    <a href="https://gst.gov.in/" target="_blank">GST SITE</a>&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="https://www.facebook.com/" target="_blank">FACEBOOK</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="https://www.sarkariresult.com/" target="_blank">SARKARI RESULT</a>&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="https://jbjsmartlearning.blogspot.com/" target="_blank">JBJ INSTITUTE</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="https://bseh.org.in/" target="_blank">HBSE</a>
+    <hr color="blue" size="10" />
+    <dt>HTML</dt>
+    <dd>HTML stand Hypertext Markup Language</dd>
+     <dt>ATM</dt>
+    <dd>ATM stand Autometed Traller Machine</dd>
+    <br />
+    <b><i><u>JBJ COMPUTER CENTER</u></i></b>
+    </div>
+    </form>
+</body>
+</html>

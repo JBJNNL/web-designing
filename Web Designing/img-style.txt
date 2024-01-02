@@ -1,0 +1,45 @@
+<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Default.aspx.cs" Inherits="_Default" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <style>
+    input
+    {
+        background-color:Red;
+        color:White;
+        border-style:groove;
+        border-color:Green;
+        font-family:Arial;
+        font-size:large;
+    
+        font-variant:normal;
+        font-weight:bold;
+      
+        
+        
+        }
+        input:hover
+        {
+            background-color:Aqua;
+        display:block;
+        direction:rtl;
+          width:auto;
+            }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+    <marquee scrollamount="10" behavior="alternate">
+   <img src="1.jpeg.jpeg" height="300" width="300" />
+   </marquee>
+
+   <hr />   
+   Enter Name<input type="text" name="name" placeholder="Enter Name"  />
+    </div>
+    </form>
+</body>
+</html>

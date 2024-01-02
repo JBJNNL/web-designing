@@ -1,0 +1,77 @@
+
+<html >
+<head runat="server">
+    <title></title>
+    
+</head>
+<body bgcolor="aqua">
+    <form id="form1" runat="server">
+    <div>
+    <table bgcolor="fuchsia" border="2">
+    <tr>
+    <td>Registration No</td>
+    <td>
+    <input type="text" name="reg" />
+    </td>
+    </tr>
+
+    <tr>
+    <td>Name</td>
+    <td>
+    <input type="text" name="name" />
+    </td>
+    </tr>
+
+    <tr>
+    <td>Father Name</td>
+    <td>
+    <input type="text" name="fname" />
+    </td>
+    </tr>
+
+    <tr>
+    <td>Email ID</td>
+    <td>
+    <input type="text" name="email" />
+    </td>
+    </tr>
+
+    <tr>
+    <td>Contact No</td>
+    <td>
+    <input type="text" name="contact" />
+    </td>
+    </tr>
+
+    <tr>
+    <td>Select Courses</td>
+    <td>
+    <select>
+    <option>ASP.NET</option>
+    <option>PHP</option>
+    <option>WEB DESIGNING</option>
+    <option>TALLY</option>
+    <option>SOFTWARE EGG.</option>
+    </select>
+    </td>
+    </tr>
+
+    <tr>
+    <td>Gender</td>
+    <td>
+    <input type="radio" name="male"  value="Male" />Male
+    <input type="radio" name="female" value="Female" />Female
+    </td>
+    </tr>
+
+    <tr>
+    <td></td>
+    <td>
+    <input type="submit" value="Submit" />
+    </td>
+    </tr>
+    </table>
+    </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Default.aspx.cs" Inherits="_Default" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+    <table border="2" bgcolor="aqua">
+    <tr>
+    <td>Roll No</td>
+    <td>
+    <input type="text" name="roll" />
+    </td>
+    </tr>
+     <tr>
+    <td>Name</td>
+    <td>
+    <input type="text" name="name" />
+    </td>
+    </tr>
+     <tr>
+    <td>Address</td>
+    <td>
+   <textarea id="tx" cols="20" rows="2"></textarea>
+    </td>
+    </tr>
+    <tr>
+    <td>DOB</td>
+    <td>
+    <input type="date" name="date" />
+    </td>
+    </tr>
+    <tr>
+    <td>Course Name</td>
+    <td>      
+     <select id="Select1">
+            <option>WEB DESIGING</option>
+            <option>ANDROID APPS</option>
+            <option>SOFTWARE ENGG.</option>
+            <option>TALLY PRIME</option>
+            <option>MS OFFICE 2019</option>
+        </select>
+    </td>
+   
+    </tr>
+    <tr>
+    <td>Gender</td>
+    <td>
+    <input type="radio" name="radio1" value="Male" />Male
+    <input type="radio" name="radio2" value="Female" />Female
+
+    </td>
+    </tr>
+    <tr>
+    <td>How to Know About Us</td>
+    <td>
+    <input type="checkbox" value="Internet" />Internet
+    <input type="checkbox" value="Friend" />Friend<br />
+    <input type="checkbox" value="Hording" />Hording
+    <input type="checkbox" value="Poster" />Poster
+    </td>
+    </tr>
+    <tr>
+   <td></td><td><input type="submit" value="Submit"</td> 
+    </tr>
+    </table>
+    </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Default.aspx.cs" Inherits="_Default" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+        }
+        .style2
+        {
+            width: 798px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+    
+        <img alt="" src="Front%20Banner.png" style="height: 90px; width: 1190px" /><br />
+        <br />
+    </div>
+    </form>
+    <table class="style1">
+        <tr>
+            <td class="style2">
+                &nbsp;</td>
+            <td>
+                <div>
+                <a>Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="about.aspx" target="_blank">About Us</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <a>Contact Us</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a>Gallary</a>
+                </div>
+            </td>
+        </tr>
+    </table>
+    <p>
+        &nbsp;</p>
+    <div>
+    <marquee scrollamount="14">
+    <img src="df.jpeg" height="350" width="400" />&nbsp;&nbsp;&nbsp;&nbsp;
+    <img src="WhatsApp Image 2021-03-12 at 11.03.23 AM (1).jpeg" height="350" width="400" />&nbsp;&nbsp;&nbsp;&nbsp;
+    <img src="WhatsApp Image 2021-03-12 at 11.03.23 AM (2).jpeg"height="350" width="400" />&nbsp;&nbsp;&nbsp;&nbsp;
+    <img src="WhatsApp Image 2021-03-12 at 11.03.23 AM.jpeg"height="350" width="400" />&nbsp;&nbsp;&nbsp;&nbsp;
+    </marquee>
+    </div>
+</body>
+</html>

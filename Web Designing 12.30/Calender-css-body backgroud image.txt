@@ -1,0 +1,85 @@
+<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Default.aspx.cs" Inherits="_Default" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <style type="text/css">
+        body
+        {
+            background-image:url("1.jpg");
+            
+            }
+    .div1
+    {
+        background-color:Fuchsia;
+        border-color:Aqua;
+        border-style:groove;
+        
+        
+        }
+        .div2
+        {
+             background-color:Lime;
+        border-color:Blue;
+        border-style:double;
+            
+            }
+            #div3
+            {
+                 background-color:Blue;
+        border-color:Black;
+        border-style:dotted;
+                
+                }
+    </style>
+</head>
+<body >
+    <form id="form1" runat="server">
+   
+    <div class="div1" style="z-index: 1; left: 336px; top: 70px; position: absolute; height: 230px; width: 320px">
+    <br />
+    </div>
+    <div class="div2" style="z-index: 1; left: 235px; top: 336px; position: absolute; height: 95px; width: 582px">
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+    </div>
+    <asp:Calendar ID="Calendar1" runat="server" 
+        onselectionchanged="Calendar1_SelectionChanged"></asp:Calendar>
+    <br />
+    <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+    <br />
+    <br />
+    </form>
+    <div id="div3" style="z-index: 1; left: 721px; top: 72px; position: absolute; height: 172px; width: 400px">
+    <marquee behavior="alternate" scrollamount="6"><font color="white" size="5">WELCOME CSS CLASS</font></marquee>
+    </div>
+    </body>
+</html>
+
+---------------------------------------------Calender Double Click ------
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+
+public partial class _Default : System.Web.UI.Page
+{
+    protected void Page_Load(object sender, EventArgs e)
+    {
+
+    }
+  
+    protected void Calendar1_SelectionChanged(object sender, EventArgs e)
+    {
+        TextBox1.Text = Calendar1.SelectedDate.ToShortDateString();
+    }
+}

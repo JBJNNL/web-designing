@@ -1,0 +1,116 @@
+		User Control
+-------------------------------------------------
+<%@ Control Language="C#" AutoEventWireup="true" CodeFile="WebUserControl.ascx.cs" Inherits="WebUserControl" %>
+<style type="text/css">
+    .style1
+    {
+        width: 100%;
+    }
+    .style2
+    {
+        width: 141px;
+    }
+</style>
+
+<div style="width: 335px; height: 216px">
+    <table bgcolor="#66CCFF" border="2" class="style1">
+        <tr>
+            <td class="style2">
+                Product Name</td>
+            <td>
+                <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+            </td>
+        </tr>
+        <tr>
+            <td class="style2">
+                Qty</td>
+            <td>
+                <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+            </td>
+        </tr>
+        <tr>
+            <td class="style2">
+                Rate</td>
+            <td>
+                <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
+            </td>
+        </tr>
+        <tr>
+            <td class="style2">
+                Amount</td>
+            <td>
+                <asp:TextBox ID="TextBox7" runat="server"></asp:TextBox>
+                <asp:Button ID="Button2" runat="server" onclick="Button2_Click" Text="Cals" />
+            </td>
+        </tr>
+        <tr>
+            <td class="style2">
+                GST Rate</td>
+            <td>
+                <asp:TextBox ID="TextBox4" runat="server"></asp:TextBox>
+            </td>
+        </tr>
+        <tr>
+            <td class="style2">
+                GST</td>
+            <td>
+                <asp:TextBox ID="TextBox5" runat="server"></asp:TextBox>
+            </td>
+        </tr>
+        <tr>
+            <td class="style2">
+                NET</td>
+            <td>
+                <asp:TextBox ID="TextBox6" runat="server"></asp:TextBox>
+            </td>
+        </tr>
+        <tr>
+            <td class="style2">
+                &nbsp;</td>
+            <td>
+                <asp:Button ID="Button1" runat="server" Height="26px" onclick="Button1_Click" 
+                    Text="GST CALCULATOR" Width="145px" />
+            </td>
+        </tr>
+    </table>
+</div>
+
+
+----------------------------------Button----------------------------
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+
+public partial class WebUserControl : System.Web.UI.UserControl
+{
+    int q, r, gstr, gst, net, amt;
+    protected void Page_Load(object sender, EventArgs e)
+    {
+
+    }
+    protected void Button1_Click(object sender, EventArgs e)
+    {
+
+        q = Convert.ToInt32(TextBox2.Text);
+        r = Convert.ToInt32(TextBox3.Text);
+        gstr = Convert.ToInt32(TextBox4.Text);
+        amt = Convert.ToInt32(TextBox7.Text);
+        amt = q * r;
+        gst =amt*gstr / 100;
+        net = amt + gst;
+        TextBox5.Text = gst.ToString();
+        TextBox6.Text = net.ToString(); ;
+    }
+    protected void Button2_Click(object sender, EventArgs e)
+    {
+
+        q = Convert.ToInt32(TextBox2.Text);
+        r = Convert.ToInt32(TextBox3.Text);
+       amt = q * r;
+       TextBox7.Text = amt.ToString();
+
+    }
+}

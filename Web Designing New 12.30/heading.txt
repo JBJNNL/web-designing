@@ -1,0 +1,68 @@
+<html >
+<head runat="server">
+<style type="text/css">
+h1
+{
+    background-color:Blue;
+    color:White;
+    border-style:groove;
+    border-color:Aqua;
+    
+    }
+    h2
+{
+    background-color:Aqua;
+    color:red;
+    border-style:double;
+    border-color:Fuchsia;
+    
+    }
+    h3
+{
+    background-color:Red;
+    color:blue;
+    border-style:groove;
+    border-color:Green;
+    
+    }
+    h4
+{
+    background-color:Fuchsia;
+    color:Navy;
+    border-style:groove;
+    border-color:Gray;
+    
+    }
+    h5
+{
+    background-color:Green;
+    color:Maroon;
+    border-style:groove;
+    border-color:Aqua;
+    
+    }
+    h6
+{
+    background-color:Yellow;
+    color:red;
+    border-style:inset;
+    border-color: Navy;
+    
+    }
+</style>
+    <title>JBJ COMPUTER CENTER</title>
+  
+</head>
+<body bgcolor="#ff9900">
+    
+    <div>
+    <h1>JBJ INSTIUTUTE</h1>
+    <h2>Our Services</h2>
+    <h3>Software Engineering</h3>
+    <h4>Hardware And Networking</h4>
+    <h5>Degree Courses</h5>
+    <h6>Polytechnical Diploma</h6>
+    </div>
+ 
+</body>
+</html>

@@ -1,0 +1,30 @@
+<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Default.aspx.cs" Inherits="_Default" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="StyleSheet.css" rel="stylesheet" type="text/css" />
+    
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+    <h1 class="h1">WEB DESIGNING</h1>
+    <h1 class="h2">SOFTWARE ENGINEERING</h1>
+    <h1 class="h3">TALLY ACCOUNING</h1>
+    <h1 class="h4">GST TRAINING</h1>
+    <h1 class="h5">JAVA</h1>
+    <h1 class="h6">ADNROIOD PROGRAMMING</h1>
+    </div>
+    <hr />
+    <p>
+    AUTOCAD Training Institutes Computer Training Institutes For Accounting Tally Training Institutes Computer Training 
+    Institutes For CCC Computer Software Training Institutes Computer Training Institutes For MS Office Computer Training
+     Institutes Computer Training Institutes For IT Computer training institute in surat, c, c++, 
+    Java, phython, web designing, ... channels such as search engines, websites, social media, email, and mobile apps
+    </p>
+    </form>
+</body>
+</html>
